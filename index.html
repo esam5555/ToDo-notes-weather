@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>DayFlow</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <h1>DayFlow</h1>
+        <p>Tasks, Notes, Weather, All in One Place</p>
+      </div>
+      <!-- start to do list -->
+      <div class="boxs">
+        <div class="task-box">
+          <h2>Tasks</h2>
+          <div class="control">
+            <input
+              class="task-input"
+              type="text"
+              placeholder="Add new Task..."
+            />
+            <button class="add-task">Add</button>
+          </div>
+          <ul class="result"></ul>
+        </div>
+        <div class="note-box">
+          <h2>Note</h2>
+          <button class="new-note">Add a new Note</button>
+          <div class="cont"></div>
+        </div>
+        <div class="weather-box">
+          <h2>Weather</h2>
+          <div class="controls">
+            <input
+              type="text"
+              placeholder="Enter city (e.g. Cairo)"
+              class="city-search"
+            />
+            <button class="search">Search</button>
+          </div>
+          <div class="result">
+            <div class="main-data">
+              <div class="info">
+                <div class="city">—</div>
+                <div class="time">01:25:06 Am</div>
+              </div>
+              <div class="degree">—<span> °C</span></div>
+            </div>
+            <div class="about-temb">
+              <div class="f-box">
+                <img src="" alt="" />
+                <div class="describe">Description: —</div>
+              </div>
+              <!-- <div class="element">
+                <div class="humidity">
+                  Humidity <br />
+                  <span>69%</span>
+                </div>
+                <div class="wind">
+                  Wind<br />
+                  <span>223M/s</span>
+                </div>
+                <div class="presure">
+                  presure<br />
+                  <span>2230hpa</span>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="task.js"></script>
+    <script src="note.js"></script>
+    <script src="weather.js"></script>
+  </body>
+</html>
